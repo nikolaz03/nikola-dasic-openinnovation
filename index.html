@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <div id="main">
+
+            <div id="wrapper">
+
+                <div id="form">   
+
+                    <div id="label">
+                         
+                        User Details
+
+                    </div>
+
+                    <div id="inputs">
+                        
+                        <div id="frame" >
+
+                            <div id="names">
+
+                                <div  class="input">
+
+                                    <p class="errorP"></p>
+
+                                    <input type="text" id="firstNameInput" placeholder="First Name">
+
+                                </div>
+                                <div  class="input">
+                                    <p class="errorP"></p>
+
+                                    <input type="text" id="lastNameInput" placeholder="Last Name">
+
+                                </div>
+
+                            </div>
+
+                            <div id="address" class="input">
+
+                                <p class="errorP"></p>
+
+                                <input type="text" id="addressInput" placeholder="Street / Number">
+                                
+
+                            </div>
+
+                            <div id="city" class="input">
+
+                                <p class="errorP"></p>
+
+                                <input type="text" id="cityInput" placeholder="City">
+
+                            </div>
+
+                            <div id="country" class="input">
+
+                                <p class="errorP"></p>
+
+                                <input type="text" id="countryInput" placeholder="Country">
+
+                            </div>
+
+                            <div id="sub" class="input">
+
+                                <button id="submit">Add User</button>
+
+                                <!-- Showing result of submiting form -->
+                                <p id="result"></p>
+                                
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="map">
+                    <!-- Google Map (JavaScript) -->
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHksoiJjnL4DIV2kruTb_0-5eahWkeyks&callback=loadMap" 
+        async defer></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

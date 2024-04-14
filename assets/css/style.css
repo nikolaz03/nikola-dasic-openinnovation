@@ -1,0 +1,133 @@
+/*FONTS*/
+@font-face {
+    font-family: "Font1";
+    src: url('../fonts/futura-medium-bt.ttf') format('truetype');
+}
+@font-face {
+    font-family: "MyFont";
+    src: url('../fonts/futura-medium-condensed-bt.ttf') format('truetype');
+}
+/*END FONTS*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+#wrapper{   
+    width: 920px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+#map{
+    width: 60%;
+}
+
+/*FORM, INPUT AND LABELS*/
+#form{
+    width: 40%;
+}
+
+.errorP{
+    margin: 0;
+    font-family:'MyFont';
+    font-size: 13px;
+    color: red;
+    height: 10px;
+    margin-bottom: 2px;
+}
+
+#result{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-family : 'MyFont';
+    display: block;
+    height: 10px;
+
+}
+
+
+#label{
+    width: 100%;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Font1';
+    background-color: #31b7ea;
+}
+
+input::placeholder{
+    color: #b1babf;
+    font-size: 20px;
+}
+
+input{
+    padding-left: 6px;
+    font-family: 'MyFont';
+    font-size: 20px;
+}
+
+.input input, button{
+    width: 100%;
+    background-color: #e7ebee;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.errorInput{
+    background-color: #fe757f !important;
+}
+.errorInput::placeholder{
+    color: white !important;
+}
+
+button{
+    cursor: pointer;
+    background-color: #31b7ea;
+    color: white;
+    font-family: 'Font1';
+    font-size: 19px;
+    margin-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#inputs{
+    width: 100%;
+    background-color:white;
+}
+
+#names{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+#names .input{
+    width: 50%;
+}
+
+#frame{
+    width: calc(100% - 50px);
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 35px;
+    padding-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+}
+/*END FORM, INPUT AND LABELS*/
